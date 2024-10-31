@@ -71,65 +71,123 @@ Gruvbox.config = {
 -- main gruvbox color palette
 ---@class GruvboxPalette
 Gruvbox.palette = {
-  dark0_hard = { gui = "#1d2021", cterm = 234 },
-  dark0 = { gui = "#282828", cterm = 235 },
-  dark0_soft = { gui = "#32302f", cterm = 236 },
-  dark1 = { gui = "#3c3836", cterm = 237 },
-  dark2 = { gui = "#504945", cterm = 239 },
-  dark3 = { gui = "#665c54", cterm = 59 },
-  dark4 = { gui = "#7c6f64", cterm = 242 },
-  light0_hard = { gui = "#f9f5d7", cterm = 230 },
-  light0 = { gui = "#fbf1c7", cterm = 230 },
-  light0_soft = { gui = "#f2e5bc", cterm = 223 },
-  light1 = { gui = "#ebdbb2", cterm = 187 },
-  light2 = { gui = "#d5c4a1", cterm = 187 },
-  light3 = { gui = "#bdae93", cterm = 144 },
-  light4 = { gui = "#a89984", cterm = 138 },
-  bright_red = { gui = "#fb4934", cterm = 203 },
-  bright_green = { gui = "#b8bb26", cterm = 142 },
-  bright_yellow = { gui = "#fabd2f", cterm = 214 },
-  bright_blue = { gui = "#83a598", cterm = 108 },
-  bright_purple = { gui = "#d3869b", cterm = 174 },
-  bright_aqua = { gui = "#8ec07c", cterm = 108 },
-  bright_orange = { gui = "#fe8019", cterm = 208 },
-  neutral_red = { gui = "#cc241d", cterm = 160 },
-  neutral_green = { gui = "#98971a", cterm = 100 },
-  neutral_yellow = { gui = "#d79921", cterm = 172 },
-  neutral_blue = { gui = "#458588", cterm = 66 },
-  neutral_purple = { gui = "#b16286", cterm = 132 },
-  neutral_aqua = { gui = "#689d6a", cterm = 71 },
-  neutral_orange = { gui = "#d65d0e", cterm = 166 },
-  faded_red = { gui = "#9d0006", cterm = 124 },
-  faded_green = { gui = "#79740e", cterm = 100 },
-  faded_yellow = { gui = "#b57614", cterm = 136 },
-  faded_blue = { gui = "#076678", cterm = 24 },
-  faded_purple = { gui = "#8f3f71", cterm = 95 },
-  faded_aqua = { gui = "#427b58", cterm = 65 },
-  faded_orange = { gui = "#af3a03", cterm = 130 },
-  dark_red_hard = { gui = "#792329", cterm = 88 },
-  dark_red = { gui = "#722529", cterm = 237 },
-  dark_red_soft = { gui = "#7b2c2f", cterm = 238 },
-  light_red_hard = { gui = "#fc9690", cterm = 210 },
-  light_red = { gui = "#fc9487", cterm = 210 },
-  light_red_soft = { gui = "#f78b7f", cterm = 210 },
-  dark_green_hard = { gui = "#5a633a", cterm = 240 },
-  dark_green = { gui = "#62693e", cterm = 240 },
-  dark_green_soft = { gui = "#686d43", cterm = 59 },
-  light_green_hard = { gui = "#d3d6a5", cterm = 187 },
-  light_green = { gui = "#d5d39b", cterm = 186 },
-  light_green_soft = { gui = "#cecb94", cterm = 186 },
-  dark_aqua_hard = { gui = "#3e4934", cterm = 238 },
-  dark_aqua = { gui = "#49503b", cterm = 238 },
-  dark_aqua_soft = { gui = "#525742", cterm = 239 },
-  light_aqua_hard = { gui = "#e6e9c1", cterm = 187 },
-  light_aqua = { gui = "#e8e5b5", cterm = 187 },
-  light_aqua_soft = { gui = "#e1dbac", cterm = 187 },
-  gray = { gui = "#928374", cterm = 244 },
+  gui = {
+    dark0_hard = "#1d2021",
+    dark0 = "#282828",
+    dark0_soft = "#32302f",
+    dark1 = "#3c3836",
+    dark2 = "#504945",
+    dark3 = "#665c54",
+    dark4 = "#7c6f64",
+    light0_hard = "#f9f5d7",
+    light0 = "#fbf1c7",
+    light0_soft = "#f2e5bc",
+    light1 = "#ebdbb2",
+    light2 = "#d5c4a1",
+    light3 = "#bdae93",
+    light4 = "#a89984",
+    bright_red = "#fb4934",
+    bright_green = "#b8bb26",
+    bright_yellow = "#fabd2f",
+    bright_blue = "#83a598",
+    bright_purple = "#d3869b",
+    bright_aqua = "#8ec07c",
+    bright_orange = "#fe8019",
+    neutral_red = "#cc241d",
+    neutral_green = "#98971a",
+    neutral_yellow = "#d79921",
+    neutral_blue = "#458588",
+    neutral_purple = "#b16286",
+    neutral_aqua = "#689d6a",
+    neutral_orange = "#d65d0e",
+    faded_red = "#9d0006",
+    faded_green = "#79740e",
+    faded_yellow = "#b57614",
+    faded_blue = "#076678",
+    faded_purple = "#8f3f71",
+    faded_aqua = "#427b58",
+    faded_orange = "#af3a03",
+    dark_red_hard = "#792329",
+    dark_red = "#722529",
+    dark_red_soft = "#7b2c2f",
+    light_red_hard = "#fc9690",
+    light_red = "#fc9487",
+    light_red_soft = "#f78b7f",
+    dark_green_hard = "#5a633a",
+    dark_green = "#62693e",
+    dark_green_soft = "#686d43",
+    light_green_hard = "#d3d6a5",
+    light_green = "#d5d39b",
+    light_green_soft = "#cecb94",
+    dark_aqua_hard = "#3e4934",
+    dark_aqua = "#49503b",
+    dark_aqua_soft = "#525742",
+    light_aqua_hard = "#e6e9c1",
+    light_aqua = "#e8e5b5",
+    light_aqua_soft = "#e1dbac",
+    gray = "#928374",
+  },
+  cterm = {
+    dark0_hard = 234,
+    dark0 = 235,
+    dark0_soft = 236,
+    dark1 = 237,
+    dark2 = 239,
+    dark3 = 59,
+    dark4 = 242,
+    light0_hard = 230,
+    light0 = 230,
+    light0_soft = 223,
+    light1 = 187,
+    light2 = 187,
+    light3 = 144,
+    light4 = 138,
+    bright_red = 203,
+    bright_green = 142,
+    bright_yellow = 214,
+    bright_blue = 108,
+    bright_purple = 174,
+    bright_aqua = 108,
+    bright_orange = 208,
+    neutral_red = 160,
+    neutral_green = 100,
+    neutral_yellow = 172,
+    neutral_blue = 66,
+    neutral_purple = 132,
+    neutral_aqua = 71,
+    neutral_orange = 166,
+    faded_red = 124,
+    faded_green = 100,
+    faded_yellow = 136,
+    faded_blue = 24,
+    faded_purple = 95,
+    faded_aqua = 65,
+    faded_orange = 130,
+    dark_red_hard = 88,
+    dark_red = 237,
+    dark_red_soft = 238,
+    light_red_hard = 210,
+    light_red = 210,
+    light_red_soft = 210,
+    dark_green_hard = 240,
+    dark_green = 240,
+    dark_green_soft = 59,
+    light_green_hard = 187,
+    light_green = 186,
+    light_green_soft = 186,
+    dark_aqua_hard = 238,
+    dark_aqua = 238,
+    dark_aqua_soft = 239,
+    light_aqua_hard = 187,
+    light_aqua = 187,
+    light_aqua_soft = 187,
+    gray = 244,
+  },
 }
 
--- get a hex list of gruvbox colors based on current bg and constrast config
+-- get a hex list of gruvbox colors based on current bg and contrast config
 local function get_colors()
-  local p = Gruvbox.palette
+  local p = vim.o.termguicolors and Gruvbox.palette.gui or Gruvbox.palette.cterm
   local config = Gruvbox.config
 
   for color, hex in pairs(config.palette_overrides) do
@@ -210,42 +268,6 @@ local function get_colors()
   return color_groups[bg]
 end
 
--- apply gui and cterm colors to the highlight groups given as an argument.
--- function works in-place, thus hl_groups will be altered
-local function expand_colors_in_highlights(hl_groups)
-  -- iterate over highlights
-  for k, hl in pairs(hl_groups) do
-    -- check if foreground value is set and expand and replace
-    if hl.fg ~= nil then
-      if hl.fg == "NONE" then
-        hl.ctermfg = "NONE"
-        hl.fg = "NONE"
-      else
-        hl.ctermfg = hl.fg.cterm
-        hl.fg = hl.fg.gui
-      end
-    end
-    -- check if background value is set and expand and replace
-    if hl.bg ~= nil then
-      if hl.bg == "NONE" then
-        hl.ctermbg = "NONE"
-        hl.bg = "NONE"
-      else
-        hl.ctermbg = hl.bg.cterm
-        hl.bg = hl.bg.gui
-      end
-    end
-    -- check if background value is set and expand and replace
-    if hl.sp ~= nil then
-      if hl.sp == "NONE" then
-        hl.sp = "NONE"
-      else
-        hl.sp = hl.sp.gui
-      end
-    end
-  end
-end
-
 local function get_groups()
   local colors = get_colors()
   local config = Gruvbox.config
@@ -271,7 +293,7 @@ local function get_groups()
       colors.fg1,
     }
     for index, value in ipairs(term_colors) do
-      vim.g["terminal_color_" .. index - 1] = value.gui
+      vim.g["terminal_color_" .. index - 1] = value
     end
   end
 
@@ -1256,8 +1278,6 @@ local function get_groups()
     groups[group] = vim.tbl_extend("force", groups[group] or {}, hl)
   end
 
-  expand_colors_in_highlights(groups)
-
   return groups
 end
 
@@ -1282,8 +1302,19 @@ Gruvbox.load = function()
   local groups = get_groups()
 
   -- add highlights
-  for group, settings in pairs(groups) do
-    vim.api.nvim_set_hl(0, group, settings)
+  for group, s in pairs(groups) do
+    -- translate generic fg/bg to TUI-spcific ctermfg/ctermbg, unless in GUI colors
+    if not vim.o.termguicolors then
+      if s.fg ~= nil then
+        s.ctermfg = s.fg
+        s.fg = nil
+      end
+      if s.bg ~= nil then
+        s.ctermbg = s.bg
+        s.bg = nil
+      end
+    end
+    vim.api.nvim_set_hl(0, group, s)
   end
 end
 
